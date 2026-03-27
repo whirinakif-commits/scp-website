@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP-005 - SCP Foundation</title>
+
+    <style>
+        /* FONT */
+        @font-face {
+            font-family: 'FBI';
+            src: url('fonts/FBI Old Report-Regular.ttf') format('truetype');
+        }
+        code {
+            font-family: 'FBI', Arial, sans-serif;
+        }
+
+        body {
+            background-image: url("images/desk2.png");
+            font-family: 'FBI', Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            padding: 0 4px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            margin: 0 105px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+        }
+
+        .navbar img {
+            width: 70px;
+            transition: transform 0.2s;
+        }
+
+        .navbar img:hover {
+            transform: scale(1.1);
+        }
+
+        /* CONTAINER */
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 2px;
+        }
+
+        /* PAPER */
+        .paper {
+            width: 45%;
+            min-height: 300px;
+            margin: 10px;
+            padding: 25px;
+            background-image: url("images/istockphoto-672298630-612x612.png");
+            background-size: cover;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .paper.left p {
+            font-size: 2.2em;
+        }
+        .paper.right p {
+            font-size: 1.7em;
+        }
+        .paper:hover {
+            transform: translateY(-1px);
+        }
+
+        /* TITLE INSIDE PAPER */
+        .title-section {
+            margin-bottom: 20px;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            color: black;
+        }
+
+        /* SCP IMAGE */
+        .scp-image {
+            width: 40%;
+            height: auto;
+            float: right;
+            margin: 10px 0 10px 20px;
+            padding: 1px;
+        }
+
+    h1 {
+        font-size: 2.2em;
+        margin: 0px 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+
+    h3 {
+        font-size: 4.3em;
+        margin-top: 20px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .paper {
+                width: 90%;
+            }
+
+            .scp-image {
+                float: none;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li>
+            <a href="scp-002.html">
+                <img src="images/icon-002.png" alt="SCP-002">
+            </a>
+        </li>
+        <li>
+            <a href="scp-003.html">
+                <img src="images/icon-003.png" alt="SCP-003">
+            </a>
+        </li>
+        <li>
+            <a href="scp-004.html">
+                <img src="images/icon-004.png" alt="SCP-004">
+            </a>
+        </li>
+        <li>
+            <a href="scp-005.html">
+                <img src="images/icon-005.png" alt="SCP-005">
+            </a>
+        </li>
+        <li>
+            <a href="scp-006.html">
+                <img src="images/icon-006.png" alt="SCP-006">
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <!-- LEFT PAPER -->
+    <div class="paper left">
+
+        <div class="title-section">
+            <h1><b>Item #: </b>SCP-005</h1>
+            <h2><b>Object Class: </b>Safe</h2>
+        </div>
+        
+        <p><img src="images/scp-005.png" alt="SCP-005" class="scp-image"></p>
+
+        <h3>Special Containment Procedures:</h3>
+        <p>SCP-005 poses no immediate risk in any direct sense. Even so, its unique functions require special measures be taken to restrict access and manipulation of the object. Approval of at least one (1) Level 4 personnel is required for the removal of the object from its containment area.</p>
+        
+        <h3>Description:</h3>
+        <p>In appearance, SCP-005 resembles an ornate key, displaying the characteristics of a typical mass produced key used in the 1920s. The key was discovered when a civilian used it to infiltrate a high-security facility. SCP-005 seems to have the unique ability to open any and all forms of lock (See Appendix A), be they mechanical or digital, with relative ease. The origin of this ability has yet to be determined.</p>
+        
+        <h3>Additional Notes:</h3>
+        <p>SCP-005 may be used as a replacement for lost security passes, but only under the supervision of at least one (1) Level 4 personnel. SCP-005 may not be used for vending machine repairs, opening lockers, or for any personnel's spare home key. Removal of the object from the compound will result in immediate termination.</p>
+        
+
+      
+    </div>
+
+    <div class="paper right">
+                <h3>Appendix A:</h3>
+        <p>While SCP-005 has been shown to be effective in removing almost any form of locking device, further experiments have shown that efforts to disguise the purpose or identity of a lock have proven at least somewhat successful in defeating SCP-005's ability. In approximately 50% of cases where a volunteer was not able to identify a locking device as such, SCP-005 was not successful in deactivating the device. Due to these results, SCP-005 has been tentatively classified as 'sentient' and further tests are being run to determine its cognitive abilities. However, there are no results that show any traits that prevent it from being able to identify any particular locking device, only that the aforementioned device has been heavily concealed and disguised.</p>
+        <h3>Reference:</h3>
+        <p>The Foundation is currently conducting ongoing tests to further understand SCP-005's capabilities and limitations. Updates will follow as more data is collected.</p>
+    </div>
+</div>
+</body>
+</html>
